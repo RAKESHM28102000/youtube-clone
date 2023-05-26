@@ -1,4 +1,4 @@
-import { Paper, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import { logo } from "../utils/constants";
@@ -8,7 +8,7 @@ const Navbar = () => (
   <Stack direction="row" alignItems="center" p={2} sx={{ position:  "sticky", background: '#000', top: 0, justifyContent: "space-between" }}>
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
-      <Paper
+      {/* <Paper
       sx={{
         ml:"10px",
         boxShadow: 'none',
@@ -17,12 +17,12 @@ const Navbar = () => (
         borderBottomRightRadius:"50%",
         borderBottomLeftRadius:"10px",
         background:"red",
-        color:"white"
+        color:"white",padding:"0 10px"
       
       }}
     >
-  <h4>Rakesh</h4>
-    </Paper>
+  <h5>Rakesh</h5>
+    </Paper> */}
    
     </Link>
     <SearchBar />
